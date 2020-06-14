@@ -1,0 +1,41 @@
+.menu__item {
+   font-size: 26px;
+}
+
+.index__title {
+   margin-top: 15px;
+}
+
+.todo-list {
+   margin-top: 30px;
+}
+
+.todo-list__item {
+   margin-top: 20px;
+   background: rgba(0, 0, 0, 0.2);
+   padding: 15px;
+   border-radius: 5px;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   -ms-border-radius: 5px;
+   -o-border-radius: 5px;
+}
+
+ul {
+   list-style: none;
+}
+
+.todo-list span {
+   font-size: 26px;
+   margin-left: 10px;
+   float: left;
+}
+
+input {
+   background-color: antiquewhite;
+}
+
+button {
+   float: right;
+   margin-right: 5px;
+}

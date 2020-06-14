@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Currency converter</title>
+</head>
+
+<body>
+    <div class="main-container container">
+        <div class="row container-fluid">
+            <div class="col-12 container-fluid d-flex justify-content-center">
+                <h2>Конвертер валют</h2>
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-12 container-fluid d-flex justify-content-center">
+                <p>Використовуючи API ПриватБанку</p>
+            </div>
+        </div>
+        <div class="choose-currency row container-fluid">
+            <div class="col-6 d-flex justify-content-center">
+                <h5>Оберіть валюту</h5>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <h5>Оберіть валюту</h5>
+            </div>
+        </div>
+        <div class="choose-currency row container-fluid">
+            <div class="col-6 d-flex justify-content-center">
+                <select id="fromCurrency">
+                    <option value="UAH" selected>Гривня</option>
+                    <option value="USD">Доллар США</option>
+                    <option value="EUR">Євро</option>
+                    <option value="RUR">Російський рубль</option>
+                </select>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <select id="toCurrency">
+                    <option value="UAH">Гривня</option>
+                    <option value="USD">Доллар США</option>
+                    <option value="EUR" selected>Євро</option>
+                    <option value="RUR">Російський рубль</option>
+                </select>
+            </div>
+        </div>
+        <div class="choose-currency row container-fluid">
+            <div class="col-6 d-flex justify-content-center">
+                <label>Введіть суму:
+                    <input type="number" id="value">
+                </label>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <label>Результат:
+                    <input type="number" id="result" disabled>
+                </label>
+            </div>
+        </div>
+        <div class="row container-fluid">
+            <div class="col-12 d-flex justify-content-center">
+                <button id="convert">Конвертувати</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

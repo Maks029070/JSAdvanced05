@@ -1,0 +1,18 @@
+/* body {
+   background: linear-gradient(red, blue);
+   background-size: 500%;
+   background-repeat: no-repeat;
+} */
+
+.main-container {
+   margin-top: 50px;
+}
+
+input {
+   width: 40%;
+   margin-left: 15px;
+}
+
+.choose-currency {
+   margin-top: 15px;
+}

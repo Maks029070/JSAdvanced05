@@ -1,0 +1,29 @@
+<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark menu">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+
+					{{#if isIndex}}
+					<li class="menu__item nav-item active"><a class="nav-link" href="/">Todo list</a></li>
+					{{else}}
+					<li class="menu__item nav-item"><a class="nav-link" href="/">Todo list</a></li>
+					{{/if}}
+
+					{{#if isCreate}}
+					<li class="menu__item nav-item active">
+						<a class="nav-link" href="/create">Add todo</a>
+					</li>
+					{{else}}
+					<li class="menu__item nav-item">
+						<a class="nav-link" href="/create">Add todo</a>
+					</li>
+					{{/if}}
+
+				</ul>
+			</div>
+		</nav>
+	</header>

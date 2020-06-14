@@ -1,0 +1,29 @@
+<div class="container-fluid">
+   <div class="row container fluid">
+      <div class="index__title col-12 d-flex justify-content-center">
+         <h1>Your todos</h1>
+      </div>
+   </div>
+</div>
+{{#if todos.length}}
+<div class="todo-list container-fluid">
+   {{#each todos}}
+   <div class="row container-fluid">
+      <div class="todo-list__item col-8 offset-2">
+         <span>{{title}}</span>
+         <form action="/delete/{{this._id}}">
+            <button type="submit" class="btn btn-danger">Remove</button>
+         </form>
+      </div>
+   </div>
+   {{/each}}
+</div>
+{{else}}
+<div class="container-fluid d-flex justify-content-center">
+   <div class="row">
+      <div class="col-12">
+         <h2>No todos! Create new</h2>
+      </div>
+   </div>
+</div>
+{{/if}}
